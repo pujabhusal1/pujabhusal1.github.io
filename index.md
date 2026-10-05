@@ -293,9 +293,7 @@ title: Puja Bhusal | Portfolio
       {% for traineeship_info in site.data.traineeship %}
       <article class="traineeship-card">
 
-        <div class="traineeship-icon">
-          💼
-        </div>
+       
 
         <div class="traineeship-content">
 
