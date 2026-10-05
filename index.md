@@ -5,15 +5,37 @@ title: Puja Bhusal | Portfolio
 
 <!-- Navigation -->
 <header class="site-header">
-  <nav class="navbar">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
 
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#traineeship">Traineeship</a>
-      <a href="#contact">Contact</a>
+      <a href="{{ '/' | relative_url }}" class="navbar-brand logo">
+        Puja<span>.</span>
+      </a>
+
+      <!-- Mobile three-line menu -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavigation"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <div class="navbar-nav ms-auto nav-links">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#traineeship">Traineeship</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+
     </div>
   </nav>
 </header>
@@ -21,44 +43,51 @@ title: Puja Bhusal | Portfolio
 
 <!-- Hero Section -->
 <section class="hero" id="about">
-  <div class="hero-content">
+  <div class="container">
+    <div class="hero-content">
 
-    <div class="hero-text">
-      <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+      <div class="hero-text">
+        <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-      <h1>
-        Hi, I'm <span>Puja Bhusal</span>
-      </h1>
+        <h1>
+          Hi, I'm <span>Puja Bhusal</span>
+        </h1>
 
-      <h2>BCA Graduate & Aspiring IT student</h2>
+        <h2>BCA Graduate & Aspiring IT Student</h2>
 
-      <p>
-        I am from Nepal and have completed my Bachelor's degree in
-        Computer Applications (BCA). I am currently learning Python
-        programming and  continuously improving my technical skills.
-      </p>
+        <p>
+          I am from Nepal and have completed my Bachelor's degree in
+          Computer Applications (BCA). I am currently learning Python
+          programming and continuously improving my technical skills.
+        </p>
 
-      <p>
-        I am interested in technology, Quality Assurance, programming, and
-        continuous learning. My goal is to build a successful career
-        in the IT field through practical experience and real-world projects.
-      </p>
+        <p>
+          I am interested in technology, Quality Assurance, programming,
+          and continuous learning. My goal is to build a successful career
+          in the IT field through practical experience and real-world projects.
+        </p>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary-btn">View My Projects</a>
-        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">
+            View My Projects
+          </a>
+
+          <a href="#contact" class="btn secondary-btn">
+            Contact Me
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div class="hero-image">
-      <div class="image-circle">
-        <img
-          src="{{ '/assets/images/photo_of_puja.jpg' | relative_url }}"
-          alt="Portrait of Puja Bhusal"
-        />
+      <div class="hero-image">
+        <div class="image-circle">
+          <img
+            src="{{ '/assets/images/photo_of_puja.jpg' | relative_url }}"
+            alt="Portrait of Puja Bhusal"
+          />
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
@@ -73,7 +102,9 @@ title: Puja Bhusal | Portfolio
     </div>
 
     <div class="about-content">
+
       <div class="about-card">
+        <div class="icon">🎓</div>
         <h3>BCA Graduate</h3>
         <p>
           I have completed my Bachelor's degree in Computer Applications
@@ -99,8 +130,8 @@ title: Puja Bhusal | Portfolio
           appealing digital experiences.
         </p>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
@@ -149,7 +180,6 @@ title: Puja Bhusal | Portfolio
       {% endfor %}
 
     </div>
-
   </div>
 </section>
 
@@ -171,6 +201,7 @@ title: Puja Bhusal | Portfolio
         <div class="timeline-dot"></div>
 
         <div class="timeline-content">
+
           <span class="timeline-number">
             0{{ forloop.index }}
           </span>
@@ -191,13 +222,12 @@ title: Puja Bhusal | Portfolio
             View Details →
           </a>
           {% endif %}
-        </div>
 
+        </div>
       </article>
       {% endfor %}
 
     </div>
-
   </div>
 </section>
 
@@ -268,6 +298,7 @@ title: Puja Bhusal | Portfolio
         </div>
 
         <div class="traineeship-content">
+
           <h3>{{ traineeship_info.name }}</h3>
 
           <p>
@@ -284,8 +315,8 @@ title: Puja Bhusal | Portfolio
             View Traineeship →
           </a>
           {% endif %}
-        </div>
 
+        </div>
       </article>
       {% endfor %}
 
@@ -296,11 +327,11 @@ title: Puja Bhusal | Portfolio
 
 
 <!-- Contact Section -->
-<!-- Contact Section -->
 <section class="contact-section" id="contact">
   <div class="container">
 
     <div class="contact-content">
+
       <p class="section-label">GET IN TOUCH</p>
 
       <h2>Let's Connect</h2>
@@ -318,6 +349,7 @@ title: Puja Bhusal | Portfolio
 
         <div class="form-group">
           <label for="name">Name</label>
+
           <input
             type="text"
             id="name"
@@ -329,6 +361,7 @@ title: Puja Bhusal | Portfolio
 
         <div class="form-group">
           <label for="email">Email</label>
+
           <input
             type="email"
             id="email"
@@ -340,6 +373,7 @@ title: Puja Bhusal | Portfolio
 
         <div class="form-group">
           <label for="message">Message</label>
+
           <textarea
             id="message"
             name="message"
@@ -354,7 +388,7 @@ title: Puja Bhusal | Portfolio
         </button>
 
       </form>
-a
+
       <p class="contact-email">
         Or email me directly:
         <a href="mailto:pujabhusal1234@gmail.com">
@@ -363,7 +397,6 @@ a
       </p>
 
     </div>
-
   </div>
 </section>
 
@@ -377,14 +410,18 @@ a
         Puja<span>.</span>
       </a>
 
-      <p>
-        BCA Graduate
-      </p>
+      <p>BCA Graduate</p>
     </div>
 
     <p class="copyright">
-       {{ 'now' | date: "%Y" }} Puja Bhusal.
+      {{ 'now' | date: "%Y" }} Puja Bhusal.
     </p>
 
   </div>
 </footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
