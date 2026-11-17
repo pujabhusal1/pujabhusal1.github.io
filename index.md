@@ -1,4 +1,3 @@
----
 layout: default
 title: Puja Bhusal | Portfolio
 ---
@@ -339,85 +338,64 @@ title: Puja Bhusal | Portfolio
         opportunities in the IT field.
       </p>
 
-     
-<form
-  action="https://formspree.io/f/xoevbkdd"
-  method="POST"
-  class="contact-form"
-  id="contact-form"
->
+      <form
+        action="https://formspree.io/f/xoevbkdd"
+        method="POST"
+        class="contact-form"
+      >
 
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Your name"
-      required
-    />
+        <div class="form-group">
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn primary-btn">
+          Send Message
+        </button>
+
+      </form>
+
+      <p class="contact-email">
+        Or email me directly:
+        <a href="mailto:pujabhusal1234@gmail.com">
+          pujabhusal1234@gmail.com
+        </a>
+      </p>
+
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="your@email.com"
-      required
-    />
-  </div>
-
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea
-      id="message"
-      name="message"
-      rows="6"
-      placeholder="Write your message..."
-      required
-    ></textarea>
-  </div>
-
-  <button type="submit" class="btn primary-btn">
-    Send Message
-  </button>
-
-</form>
-
-<p class="contact-email">
-  Or email me directly:
-  <a href="mailto:pujabhusal1234@gmail.com">
-    pujabhusal1234@gmail.com
-  </a>
-</p>
-</div?>
 </section>
-
-<script>
-document.getElementById("contact-form").addEventListener("submit", async function(e) {
-    e.preventDefault();
-
-    const response = await fetch(this.action, {
-        method: "POST",
-        body: new FormData(this),
-        headers: {
-            "Accept": "application/json"
-        }
-    });
-
-    if (response.ok) {
-        alert("Thank you for your message! I'll get back to you soon.");
-        this.reset();
-    } else {
-        alert("Sorry! Something went wrong. Please try again.");
-    }
-});
-</script>
-
-
-
 
 
 <!-- Footer -->
@@ -441,10 +419,6 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
 
 <!-- Bootstrap JavaScript -->
-
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
 </script>
----
-
-
