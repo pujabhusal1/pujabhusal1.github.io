@@ -356,7 +356,7 @@ title: Puja Bhusal | Portfolio
             name="name"
             placeholder="Your name"
             required
-          />
+          
         </div>
 
         <div class="form-group">
