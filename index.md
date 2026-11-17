@@ -1,6 +1,4 @@
-layout: default
-title: Puja Bhusal | Portfolio
----
+
 
 <!-- Navigation -->
 <header class="site-header">
