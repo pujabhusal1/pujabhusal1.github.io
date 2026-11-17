@@ -344,8 +344,7 @@ title: Puja Bhusal | Portfolio
   method="POST"
   class="contact-form"
   id="contact-form"
->
-      >
+
 
         <div class="form-group">
           <label for="name">Name</label>
