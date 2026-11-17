@@ -340,9 +340,11 @@ title: Puja Bhusal | Portfolio
       </p>
 
       <form
-        action="https://formspree.io/f/xoevbkdd"
-        method="POST"
-        class="contact-form"
+  action="https://formspree.io/f/xoevbkdd"
+  method="POST"
+  class="contact-form"
+  id="contact-form"
+>
       >
 
         <div class="form-group">
@@ -397,6 +399,15 @@ title: Puja Bhusal | Portfolio
     </div>
   </div>
 </section>
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    alert("Thank you for your message! I'll get back to you soon.");
+
+    this.submit();
+});
+</script>
 
 
 <!-- Footer -->
