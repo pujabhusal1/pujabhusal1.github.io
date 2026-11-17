@@ -32,7 +32,7 @@ title: Puja Bhusal | Portfolio
           <a class="nav-link" href="#education">Education</a>
           <a class="nav-link" href="#skills">Skills</a>
           <a class="nav-link" href="#traineeship">Traineeship</a>
-          <a class="nav-link" href="contact">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
       </div>
 
