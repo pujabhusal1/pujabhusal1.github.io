@@ -392,6 +392,29 @@ title: Puja Bhusal | Portfolio
     pujabhusal1234@gmail.com
   </a>
 </p>
+</section>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const response = await fetch(this.action, {
+        method: "POST",
+        body: new FormData(this),
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    if (response.ok) {
+        alert("Thank you for your message! I'll get back to you soon.");
+        this.reset();
+    } else {
+        alert("Sorry! Something went wrong. Please try again.");
+    }
+});
+</script>
+
 
 
 
