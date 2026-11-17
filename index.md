@@ -420,6 +420,33 @@ title: Puja Bhusal | Portfolio
 
 
 <!-- Bootstrap JavaScript -->
+<script>
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    status.textContent = "Sending message...";
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    if (response.ok) {
+        status.textContent =
+            "Thank you for your message! I'll get back to you soon.";
+        form.reset();
+    } else {
+        status.textContent =
+            "Oops! Something went wrong. Please try again.";
+    }
+});
+</script>
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
 </script>
